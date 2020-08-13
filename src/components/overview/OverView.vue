@@ -1,12 +1,9 @@
 <template>
   <div class="warp_main">
-    <audio
-      class="audio_box"
-      v-for="item in audioFile"
-      :key="item.id"
-      :src="item.url"
-      controls="controls"
-    ></audio>
+    <!-- <div v-for="item in audioFile" :key="item.id">
+      {{item.name}} -->
+      <audio class="audio_box" src="../../../static/audio/Jay/一路向北.mp3" controls="controls"></audio>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -19,9 +16,9 @@ export default {
   },
   mounted() {
     // this.$axios.defaults.baseURL = "/api";
-    this.$axios.get("http://api.migu.jsososo.com/search?keyword=周杰伦").then((Response) => {
-      this.audioFile = Response.data.data.list;
-    });
+    // this.$axios.get("/search?keyword=周杰伦").then((Response) => {
+    //   this.audioFile = Response.data.data.list;
+    // });
   },
 };
 </script>
