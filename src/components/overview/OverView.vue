@@ -1,6 +1,12 @@
 <template>
   <div class="warp_main">
-    {{code}}
+    <audio
+      class="audio_box"
+      v-for="item in audioFile"
+      :key="item.id"
+      :src="item.url"
+      controls="controls"
+    ></audio>
   </div>
 </template>
 
@@ -8,15 +14,14 @@
 export default {
   data() {
     return {
-      code: 0,
+      audioFile: [],
     };
   },
   mounted() {
-    this.$axios
-      .get("http://localhost:3000/search?keywords=海阔天空")
-      .then((Response) => {
-        this.code = Response.data.code;
-      });
+    this.$axios.defaults.baseURL = "/api";
+    this.$axios.get("/search?keyword=周杰伦").then((Response) => {
+      this.audioFile = Response.data.data.list;
+    });
   },
 };
 </script>
@@ -24,7 +29,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/global.scss";
 .warp_main {
-    text-align: center;
-    font-size: 60px;
+  text-align: center;
+  font-size: 60px;
 }
 </style>
