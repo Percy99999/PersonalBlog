@@ -18,8 +18,8 @@ export default {
     };
   },
   mounted() {
-    this.$axios.defaults.baseURL = "/api";
-    this.$axios.get("/search?keyword=周杰伦").then((Response) => {
+    // this.$axios.defaults.baseURL = "/api";
+    this.$axios.get("http://api.migu.jsososo.com/search?keyword=周杰伦").then((Response) => {
       this.audioFile = Response.data.data.list;
     });
   },
