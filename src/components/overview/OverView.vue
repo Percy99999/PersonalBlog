@@ -1,8 +1,9 @@
 <template>
   <div class="warp_main">
     <!-- <div v-for="item in audioFile" :key="item.id">
-      {{item.name}} -->
-      <audio class="audio_box" src="/static/audio/一路向北.mp3" controls="controls"></audio>
+    {{item.name}}-->
+    <img src="../../assets/percy.jpg" alt="">
+    <audio class="audio_box" src="/static/audio/一路向北.mp3" controls="controls"></audio>
     <!-- </div> -->
   </div>
 </template>
