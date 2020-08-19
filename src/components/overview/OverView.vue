@@ -2,7 +2,7 @@
   <div class="warp_main">
     <!-- <div v-for="item in audioFile" :key="item.id">
     {{item.name}}-->
-    <img src="../../assets/percy.jpg" alt="">
+    <!-- <img src="../../assets/percy.jpg" alt=""> -->
     <audio class="audio_box" src="/static/audio/一路向北.mp3" controls="controls"></audio>
     <!-- </div> -->
   </div>
