@@ -1,4 +1,4 @@
-# personalwebsite
+# personalBlog
 
 > A Vue.js project
 
