@@ -3,8 +3,9 @@
     <!-- <div v-for="item in audioFile" :key="item.id">
     {{item.name}}-->
     <!-- <img src="../../assets/percy.jpg" alt=""> -->
-    <audio class="audio_box" src="/static/audio/一路向北.mp3" controls="controls"></audio>
+    <!-- <audio class="audio_box" src="/static/audio/一路向北.mp3" controls="controls"></audio> -->
     <!-- </div> -->
+    <div>1111</div>
   </div>
 </template>
 
